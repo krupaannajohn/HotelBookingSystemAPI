@@ -6,7 +6,7 @@ class Room(models.Model):
     capacity = models.IntegerField()
     price_per_night = models.DecimalField(max_digits=8, decimal_places=2)
     available = models.BooleanField(default=True)
-    location = models.CharField(max_length=200, default='Default Location')
+    location = models.CharField(max_length=200)
     
 
 
